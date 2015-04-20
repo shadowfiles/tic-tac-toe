@@ -1,0 +1,120 @@
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	word-wrap: break-word; 
+}
+
+body {
+	color: #222;
+	font-size: 16px;
+	line-height: 22px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, 'san serif';
+}
+
+img {
+	border: 0px;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	margin: 0px;
+	padding: 0.5em 0px;
+	text-align: center;
+}
+
+p {
+	display: block;
+	font-size: 1em;
+	margin: 1em 0px;
+	padding: 0px;
+}
+
+a, a:active, a:link, a:visited {
+	text-decoration: none;
+	color: #132DE5;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+	border-radius: 10px;
+	border: 0px;
+	transition: background .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out;
+  -webkit-transition: background .15s ease-in-out;
+}
+
+
+button:focus {
+	border: none;
+	outline:none;
+}
+
+table#board {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table#board td.o:before {
+	color: #173EBD;
+	content: "○";
+	font-size: 145px;
+	line-height: 150px;
+}
+
+table#board td.x:before {
+	color: #E81A2E;
+	content: "⨯";
+	font-weight: lighter;
+	font-size: 110px;
+	line-height: 150px;
+}
+
+table#board td:hover {
+	cursor: pointer;
+	background: #ddd;
+}
+
+table#board td {
+  border: 2px solid #aaa;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+table#board tr:first-child td {
+  border-top: 0;
+}
+
+table#board tr:last-child td {
+  border-bottom: 0;
+}
+
+table#board tr td:first-child {
+  border-left: 0;
+}
+
+table#board tr td:last-child {
+  border-right: 0;
+}
+
+#container {
+	width: 50%;
+	margin: auto;
+}
+
+.clearfix {
+	height: 1px;
+	float: left;
+	clear: both;
+}
