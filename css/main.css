@@ -27,6 +27,7 @@ h1 {
 	margin: 0px;
 	padding: 0.5em 0px;
 	text-align: center;
+	font-weight: normal;
 }
 
 p {
@@ -82,7 +83,7 @@ table#board td.x:before {
 
 table#board td:hover {
 	cursor: pointer;
-	background: #ddd;
+	background: #eee;
 }
 
 table#board td {
@@ -90,6 +91,9 @@ table#board td {
   text-align: center;
   width: 150px;
   height: 150px;
+  transition: background .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out;
+  -webkit-transition: background .15s ease-in-out;
 }
 
 table#board tr:first-child td {
